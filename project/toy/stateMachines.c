@@ -2,11 +2,13 @@
 #include "stateMachines.h"
 #include "buzzer.h"
 #include "drawCakes.h"
+#include "lcddraw.h"
+#include "lcdutils.h"
 
 State current_state = begin;
 
 void state_chocolate(){
-
+  drawChocolate(0,0);
 }
 
 void state_vanilla(){
