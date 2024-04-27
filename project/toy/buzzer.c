@@ -3,7 +3,7 @@
 #include "buzzer.h"
 
 int buzzer_sec = 0;
-chsr counter_buzzer_sec = 0;
+char counter_buzzer_sec = 0;
 
 void buzzer_init(){
   timerAUpmode();
@@ -15,7 +15,7 @@ void buzzer_init(){
 
 void buzzer_set_period(short cycles){
   CCR0 = cycles;
-  CRR1 = cuucles >> 1;
+  CCR1 = cycles >> 1;
 }
 
 void hbday_song(){

@@ -1,6 +1,6 @@
 #include <msp430.h>
 #include <libTimer.h>
-#include "state_machines.h"
+#include "stateMachines.h"
 
 void wdt_c_handler(){
   switch (current_state){

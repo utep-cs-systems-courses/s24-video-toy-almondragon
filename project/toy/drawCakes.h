@@ -9,3 +9,5 @@ void drawCandles(int col, int row);
 void updateHeights();
 
 extern int layerLimitFlag;
+
+#endif
