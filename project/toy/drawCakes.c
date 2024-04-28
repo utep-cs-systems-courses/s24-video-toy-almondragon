@@ -19,7 +19,8 @@ void drawVanilla(int col, int row){
 }
 
 void drawBlueberry(int col, int row){
-
+  fillRectangle(20,currentHeight,screenWidth-40,10, COLOR_ROYAL_BLUE);
+  updateHeights();
 }
 
 void drawStrawberry(int col, int row){
@@ -47,10 +48,10 @@ void update_shapes(){
         drawVanilla(0,0);
         break;
       case blueberry:
-        drawChocolate(0,0);
+        drawBlueberry(0,0);
         break;
       case strawberry:
-        drawVanilla(0,0);
+        drawChocolate(0,0);
         break;
       case candles:
         drawCandles(0,0);
