@@ -1,18 +1,18 @@
+#include "lcdutils.h"
+#include "lcddraw.h" 
 #include <msp430.h>
 #include "stateMachines.h"
 #include "buzzer.h"
 #include "drawCakes.h"
-#include "lcddraw.h"
-#include "lcdutils.h"
 
 State current_state = begin;
 
 void state_chocolate(){
-  drawChocolate(0,0);
+  clearScreen(COLOR_BLUE);
 }
 
 void state_vanilla(){
-
+  clearScreen(COLOR_PINK);
 }
 
 void state_blueberry(){

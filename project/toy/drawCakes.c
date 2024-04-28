@@ -9,7 +9,7 @@ void drawChocolate(int col, int row){
 }
 
 void drawVanilla(int col, int row){
-
+  clearScreen(COLOR_PINK);
 }
 
 void drawBlueberry(int col, int row){
