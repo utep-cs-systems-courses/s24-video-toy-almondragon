@@ -18,6 +18,7 @@ void main(){
   enableWDTInterrupts();
   or_sr(0x8);
     while(1) {
+      clearScreen(COLOR_BLUE);
           if (redrawScreen) {
               update_shapes();
               redrawScreen = 0;
