@@ -17,8 +17,8 @@ void main(){
   buzzer_init();
   enableWDTInterrupts();
   or_sr(0x8);
+    clearScreen(COLOR_BLUE);
     while(1) {
-      clearScreen(COLOR_BLUE);
           if (redrawScreen) {
               update_shapes();
               redrawScreen = 0;

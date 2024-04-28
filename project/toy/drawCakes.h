@@ -11,5 +11,7 @@ void update_shapes();
 
 extern int layerLimitFlag;
 extern char redrawScreen;
+extern unsigned char currentHeight;
+
 
 #endif
