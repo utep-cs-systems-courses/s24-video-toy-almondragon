@@ -17,8 +17,9 @@ void updateHeights(){
   currentStart += 5;
   currentEnd-=10;
   limitFlag+=1;
-  if(limitFlag == 5)
+  if(limitFlag == 5){
     transition_state(candles);
+  }
 }
 
 char display_once = 1;
@@ -47,19 +48,18 @@ void state_blueberry(){
 }
 
 void state_strawberry(){
-    if (display_once){
-        drawStrawberry();
-        updateHeights();
-        display_once = 0;
-    }
+  if (display_once){
+    drawStrawberry();
+    updateHeights();
+    display_once = 0;
+  }
 }
 
 void state_candles(){
-  clearScreen(COLOR_PINK);
+  drawCandles();
 }
 
 void state_begin(){
-
 }
 
 void transition_state(State next_state){

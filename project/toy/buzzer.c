@@ -22,20 +22,3 @@ void hbday_song(){
 
   //to add code
 }
-
-void chocolate_SE(){
-
-  // to add code
-}
-
-void vanilla_SE(){
-  // to add code
-}
-
-void blueberry_SE(){
-  // to add code
-}
-
-void starwberry_SE(){
-  // to add code
-}

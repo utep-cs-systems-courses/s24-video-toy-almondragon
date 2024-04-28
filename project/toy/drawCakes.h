@@ -5,7 +5,7 @@ void drawChocolate();
 void drawVanilla();
 void drawBlueberry();
 void drawStrawberry();
-void drawCandles(int col, int row);
+void drawCandles();
 void updateHeights();
 void update_shapes();
 

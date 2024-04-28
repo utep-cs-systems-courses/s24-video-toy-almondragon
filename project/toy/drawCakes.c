@@ -23,8 +23,10 @@ void drawStrawberry(){
   fillRectangle(currentStart,currentHeight,currentEnd,20,COLOR_RED);
 }
 
-void drawCandles(int col, int row){
-    clearScreen(COLOR_RED);
+void drawCandles(){
+  drawString5x7(10,5,"congratulations",COLOR_WHITE,COLOR_BLUE);
+  fillRectangle((screenWidth/2)-5,currentHeight-10,10,30,COLOR_WHITE);
+  fillRectangle((screenWidth/2)-5,currentHeight-20,10,10,COLOR_ORANGE);
 }
 
 void update_shapes(){
