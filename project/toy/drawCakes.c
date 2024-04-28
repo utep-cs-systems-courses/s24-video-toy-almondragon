@@ -7,20 +7,20 @@
 
 
 
-void drawChocolate(int col, int row){
-  fillRectangle(20,currentHeight,screenWidth-40,20,COLOR_BROWN);
+void drawChocolate(){
+  fillRectangle(currentStart,currentHeight,currentEnd,20,COLOR_BROWN);
 }
 
-void drawVanilla(int col, int row){
-  fillRectangle(20,currentHeight,screenWidth-40,20,COLOR_BEIGE);
+void drawVanilla(){
+  fillRectangle(currentStart,currentHeight,currentEnd,20,COLOR_BEIGE);
 }
 
-void drawBlueberry(int col, int row){
-    fillRectangle(20,currentHeight,screenWidth-40,20, COLOR_ROYAL_BLUE);
+void drawBlueberry(){
+    fillRectangle(currentStart,currentHeight,currentEnd,20, COLOR_ROYAL_BLUE);
 }
 
-void drawStrawberry(int col, int row){
-    fillRectangle(20,currentHeight,screenWidth-40,20,COLOR_RED);
+void drawStrawberry(){
+  fillRectangle(currentStart,currentHeight,currentEnd,20,COLOR_RED);
 }
 
 void drawCandles(int col, int row){
