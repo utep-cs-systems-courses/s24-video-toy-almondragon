@@ -57,9 +57,19 @@ void state_strawberry(){
 
 void state_candles(){
   drawCandles();
+  hbday_song();
 }
 
 void state_begin(){
+  if(display_once){
+    clearScreen(COLOR_BLUE);
+    display_once = 0;
+  }
+  buzzer_set_period(0);
+  limitFlag = 0;
+  currentHeight = screenHeight-20;
+  currentStart = 10;
+  currentEnd = screenWidth-20;
 }
 
 void transition_state(State next_state){
