@@ -34,7 +34,7 @@ void drawCandles(int col, int row){
 void updateHeights(){
   currentHeight-=20;
   limitFlag+=1;
-  if(limitFlag = 4)
+  if(limitFlag == 4)
     transition_state(candles);
 }
 

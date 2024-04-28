@@ -24,7 +24,7 @@ void state_strawberry(){
 }
 
 void state_candles(){
-
+  clearScreen(COLOR_PINK);
 }
 
 void state_begin(){
