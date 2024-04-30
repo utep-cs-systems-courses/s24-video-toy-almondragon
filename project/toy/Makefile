@@ -7,7 +7,7 @@ AS 		= msp430-elf-gcc -mmcu=${CPU} -c
 
 all: bakeCake.elf
 
-bakeCake.elf: ${COMMON_OBJECTS} wdt_handler.o buzzer.o stateMachines.o drawCakes.o p2_interrupt_handler.o switches.o wdt_c_handler.o main.o
+bakeCake.elf: ${COMMON_OBJECTS} updateHeight.o wdt_handler.o buzzer.o stateMachines.o drawCakes.o p2_interrupt_handler.o switches.o wdt_c_handler.o main.o
 	${CC} ${CFLAGS} ${LDFLAGS} -o $@ $^ -lTimer -lLcd
 
 load: bakeCake.elf

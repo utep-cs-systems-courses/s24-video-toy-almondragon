@@ -20,5 +20,8 @@ void state_begin();
 void transition_state(State next_state);
 
 extern State current_state;
-
+extern unsigned char limitFlag;
+extern unsigned char currentHeight;
+extern unsigned char currentEnd;
+extern unsigned char currentStart;
 #endif

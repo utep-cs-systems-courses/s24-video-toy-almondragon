@@ -7,20 +7,20 @@
 #include "buzzer.h"
 
 State current_state = begin;
-int limitFlag = 0;
-u_char currentHeight = screenHeight-20;
-u_char currentStart = 10;
-u_char currentEnd = screenWidth - 20;
+unsigned char limitFlag = 0;
+unsigned char currentHeight = screenHeight-20;
+unsigned char currentStart = 10;
+unsigned char currentEnd = screenWidth - 20;
 
-void updateHeights(){
-  currentHeight-=20;
-  currentStart += 5;
-  currentEnd-=10;
-  limitFlag+=1;
-  if(limitFlag == 5){
-    transition_state(candles);
-  }
-}
+//void updateHeights(){
+//currentHeight-=20;
+//currentStart += 5;
+//currentEnd-=10;
+//limitFlag+=1;
+//if(limitFlag == 5){
+//  transition_state(candles);
+//}
+//}
 
 char display_once = 1;
 void state_chocolate(){
