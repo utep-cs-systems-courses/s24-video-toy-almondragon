@@ -33,7 +33,7 @@ make clean
 To bake your cake, click on the designated button for whichever layer you
 would like to add to your cake.
 
-Button | Lullaby
+Button | Layers
 ------ | -------
 1      | Chocolate Sponge
 2      | Vanilla Sponge
